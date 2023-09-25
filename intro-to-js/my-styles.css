@@ -1,0 +1,12 @@
+body {
+    background-color: #ce9764;
+    font-family: "Franklin Gothic Book";
+    font-size: 14px;
+}
+
+p {
+    background-color: beige;
+    border: 2px solid saddlebrown;
+    padding: 5px;
+    margin: 5px;
+}
