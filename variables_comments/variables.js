@@ -27,3 +27,22 @@ console.log("I visited", tripLocation, "for", tripLength,
 console.log(`I visited ${tripLocation} for ${tripLength} days!` +
             `I can't believe how ${weather} it was!`);
 
+//this displays a message in the page as a dialogue window
+alert("Welcome to my program!");
+
+//the pet variable will be assigned the user input
+let pet = prompt("Enter your pet name!");
+alert(`Your pet is named ${pet}`);
+
+//the boyGirl variable will be assigned true/false
+let boyGirl = confirm("Is your pet a boy?");
+alert(`Is your pet a boy? ${boyGirl}`);
+
+if (boyGirl === true)
+{
+    alert("The pet is a boy");
+}
+else //otherwise boyGirl must be false
+{
+    alert("The pet is a girl");
+}
