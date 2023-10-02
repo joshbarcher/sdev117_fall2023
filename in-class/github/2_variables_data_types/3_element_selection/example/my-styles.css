@@ -1,0 +1,17 @@
+/* select the element with id 'first' */
+#first {
+    font-weight: bold;
+}
+
+#nickname {
+    text-decoration: underline;
+}
+
+/* all spans on the page */
+span {
+    font-family: "Franklin Gothic Book", serif;
+}
+
+.colorful {
+    color: orange;
+}
