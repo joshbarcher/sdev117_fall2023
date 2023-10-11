@@ -1,0 +1,14 @@
+/*
+    Styles for the page that is showing our colors.
+
+    Author: Josh Archer
+    Date: 10/11/23
+    File: colors.css
+*/
+
+body {
+    background-color: #ff00ff;
+    font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,
+                 Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+}
+

@@ -1,3 +1,16 @@
+/*
+    In this file we are practicing with if-statements.
+
+    Author: Josh Archer
+    Date: 10/11/23
+    File: colors.js
+*/
+
+// In this file we are practicing with if-statements.
+// Author: Josh Archer
+// Date: 10/11/23
+// File: colors.js
+
 //read in rgb values (as strings)
 let r = parseInt(prompt("Enter red component"));
 let g = parseInt(prompt("Enter green component"));
