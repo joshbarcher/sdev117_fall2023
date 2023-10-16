@@ -1,3 +1,12 @@
+//constants (replacing magic numbers)
+const MILLIS = 1000;
+const SECONDS_MINUTES = 60;
+const HOURS = 24;
+const DAYS = 365;
+
+let millisecondsEpoch = new Date().getTime();
+let seconds = millisecondsEpoch / MILLIS;
+
 //ask the user for a student name
 let studentName = prompt("Enter a student name");
 
