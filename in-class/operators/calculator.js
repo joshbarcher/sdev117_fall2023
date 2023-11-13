@@ -12,6 +12,9 @@ console.log("Type of op1 is", typeof op1);
 console.log("Type of op2 is", typeof op2);
 console.log("Our operands are", op1, op2);
 
+alert("Thank you!");
+let bool = confirm("Are you ready?");
+
 if (!Number.isNaN(op1) && !Number.isNaN(op2))
 {
     //good case, we've got numbers

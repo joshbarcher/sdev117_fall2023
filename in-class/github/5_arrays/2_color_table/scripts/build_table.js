@@ -28,3 +28,26 @@ let colorNames = [
     "Tomato", "Turquoise", "Violet", "Wheat", "White", "WhiteSmoke", "Yellow",
     "YellowGreen",
 ];
+
+//select the tbody in the table
+let tbody = document.querySelector("tbody");
+
+//loop over the indices in the array
+for (let i = 0; i <= colorNames.length - 1; i++)
+{
+    let color = colorNames[i];
+
+    let row = `<tr>
+                    <td>${color}</td>
+                    <td style="background-color: ${color}"></td>
+               </tr>`;
+
+    tbody.innerHTML += row;
+}
+
+
+
+
+
+
+

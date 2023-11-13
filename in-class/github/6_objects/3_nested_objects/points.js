@@ -11,10 +11,16 @@ let plane = {
         { x: 0, y: 1 }
     ],
     onAnAxis: function(x, y) {
-        return x == 0 || y == 0;
+        return x === 0 || y === 0;
     },
     distance: function(point1, point2) {
         return Math.sqrt((point1.x - point2.x) ** 2 +
                          (point1.y - point2.y) ** 2);
     }
 }
+
+//let point1 = { x: 3, y: 2 };
+//let point2 = { x: 12, y: -5 };
+
+let distanceBetween = plane.distance({ x: 3, y: 2 }, { x: 12, y: -5 });
+console.log(distanceBetween);
