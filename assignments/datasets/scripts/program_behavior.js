@@ -38,5 +38,20 @@ function display()
 
     let record = records[index];
     console.log(record);
+
+    //print out an interesting property of my dataset
+    console.log(record.County);
+    console.log(record["Housing Data"]["Residing in Group Quarters"])
 }
 
+//print out the counties in alabama that are in the data set
+for (let i = 0; i < records.length; i++)
+{
+    let record = records[i];
+
+    let state = "Washington";
+    if (record.State === state)
+    {
+        console.log(record.County, "is in", state);
+    }
+}

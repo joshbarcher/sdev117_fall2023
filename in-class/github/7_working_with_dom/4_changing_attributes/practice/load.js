@@ -20,4 +20,17 @@ for (let i = 0; i < images.length; i++)
     let number = Math.ceil(Math.random() * 10);
 
     images[i].src = `images/${number}.png`;
+
+    //this will replace all class names
+    //images[i].className = "highlight";
+
+    //alternatively, we can add a class
+    images[i].classList.add("highlight");
 }
+
+let ends = document.querySelectorAll(".book-ends");
+for (let i = 0; i < ends.length; i++)
+{
+    ends[i].style.border = "5px solid orange";
+}
+

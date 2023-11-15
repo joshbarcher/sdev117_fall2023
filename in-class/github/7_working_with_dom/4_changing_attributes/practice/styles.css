@@ -7,3 +7,9 @@ section {
     display: flex;
     flex-wrap: wrap;
 }
+
+.highlight {
+    border-radius: 100px;
+    border: 2px solid darkred;
+}
+

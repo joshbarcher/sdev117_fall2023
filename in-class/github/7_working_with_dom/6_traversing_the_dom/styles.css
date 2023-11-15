@@ -1,3 +1,9 @@
 .cell {
     border: 2px solid lightgreen;
 }
+
+/* apply a style to the quotes inside of
+paragraphs */
+p span.quote {
+    color: darkgreen;
+}
