@@ -1,0 +1,27 @@
+/* create a fixed page layout */
+html {
+    background-color: lightgreen;
+}
+
+body {
+    background-color: lightpink;
+    width: 1000px;
+    margin: auto;
+}
+
+/* center all elements */
+h1, button, img {
+    display: block;
+    margin: 8px auto;
+}
+
+h1 {
+    width: 280px;
+}
+
+/* clean up the image */
+img {
+    border-radius: 10px;
+    border: 2px solid darkred;
+    width: 300px;
+}

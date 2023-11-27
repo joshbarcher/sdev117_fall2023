@@ -1,20 +1,23 @@
-let button = document.querySelector("button");
-button.onclick = () => {
-    //get a number in the range [1,6]
-    let sides = Math.floor(Math.random() * 6) + 1;
+window.onload = () => {
+    let button = document.querySelector("button");
+    button.onclick = () => {
+        //add a new image to the <div>
+        let image = document.createElement("img");
 
-    //get a file name - images/1.png, images/2.png, ... , images/6.png
-    let file = `images/${sides}.png`;
+        image.src = getRandomDiceFile();
+        image.alt = "A 6-sided dice";
+        image.className = "dice"; //this will pick up styles in the stylesheet
 
-    //add a new image to the <div>
-    let image = document.createElement("img");
+        //event handler to change dice when clicked
+        image.onclick = () => image.src = getRandomDiceFile();
 
-    image.src = file;
-    image.alt = "A 6-sided dice";
-    image.className = "dice"; //this will pick up styles in the stylesheet
-
-    let div = document.querySelector("#play-area");
-    div.appendChild(image);
+        let div = document.querySelector("#play-area");
+        div.appendChild(image);
+    };
 };
 
-
+function getRandomDiceFile()
+{
+    let sides = Math.floor(Math.random() * 6) + 1;
+    return `images/${sides}.png`;
+}
