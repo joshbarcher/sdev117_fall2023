@@ -25,3 +25,17 @@ img {
     border: 2px solid darkred;
     width: 300px;
 }
+
+#breeds {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    width: 180px;
+    border: 2px solid black;
+    background-color: beige;
+    margin: 8px;
+    padding: 8px;
+}

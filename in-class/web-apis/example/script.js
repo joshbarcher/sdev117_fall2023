@@ -33,10 +33,16 @@ function showBreeds(breedsArray)
         //add a div with the breed name inside
         let div = document.createElement("div");
         let header = document.createElement("h3");
+        let para = document.createElement("p");
+        let anchor = document.createElement("a");
 
         header.textContent = breed.name;
+        para.textContent = breed.description;
+        anchor.href = breed.wikipedia_url;
 
-        div.appendChild(header);
+        anchor.appendChild(header)
+        div.appendChild(anchor);
+        div.appendChild(para);
         breedsSection.appendChild(div);
     }
 }
