@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Book Entry Form</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="validation.js"></script>
+	</head>
+	<body>
+		<h1>Book Entry Form</h1>
+		<hr>
+		<form>
+			<!-- book title -->
+			<section>
+				<label for="book-title" class="form-label">Title</label>
+				<input type="text" id="book-title" required>
+			</section>
+
+			<!-- author -->
+			<section>
+				<label for="book-author" class="form-label">Author</label>
+				<input type="text" id="book-author" required>
+			</section>
+
+			<!-- pages -->
+			<section>
+				<label for="pages" class="form-label">Total pages</label>
+				<input type="number" id="pages" required>
+			</section>
+
+			<!-- publish date -->
+			<section>
+				<label for="released-on" class="form-label">Released On</label>
+				<input type="date" id="released-on" required>
+			</section>
+
+			<!-- isbn -->
+			<section>
+				<label for="isbn" class="form-label">ISBN</label>
+				<input type="text" id="isbn" placeholder="xxx-x-xx-xxxxxx-x"
+					   pattern="\d{3}-\d{1}-\d{2}-\d{6}-\d{1}" required>
+			</section>
+
+			<!-- rating -->
+			<!-- format (e-book, softcover, hardcover) -->
+			<!-- genres -->
+
+			<!-- button to send the book to the server -->
+			<button>Add Book!</button>
+		</form>
+	</body>
+</html>
