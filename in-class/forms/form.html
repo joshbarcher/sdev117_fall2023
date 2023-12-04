@@ -42,8 +42,42 @@
 			</section>
 
 			<!-- rating -->
+			<section>
+				<label for="rating" class="form-label">5-Star Rating</label>
+				<select id="rating">
+					<option value="1">1 star</option>
+					<option value="2">2 stars</option>
+					<option value="3">3 stars</option>
+					<option value="4">4 stars</option>
+					<option value="5" selected>5 stars</option>
+				</select>
+			</section>
+
 			<!-- format (e-book, softcover, hardcover) -->
+			<section>
+				<label class="form-label">Book Format</label>
+
+				<input type="radio" id="e-book" name="book-format">
+				<label for="e-book">Ebook</label>
+				<input type="radio" id="soft-cover" name="book-format">
+				<label for="soft-cover">Softcover</label>
+				<input type="radio" id="hard-cover" name="book-format">
+				<label for="hard-cover">Hardcover</label>
+			</section>
+
 			<!-- genres -->
+			<section>
+				<label class="form-label">Book Genres</label>
+
+				<input type="checkbox" id="dystopian-genre">
+				<label for="dystopian-genre">Dystopian</label>
+				<input type="checkbox" id="scifi-genre">
+				<label for="scifi-genre">Science Fiction</label>
+				<input type="checkbox" id="fantasy-genre">
+				<label for="fantasy-genre">Fantasy</label>
+				<input type="checkbox" id="thriller-genre">
+				<label for="thriller-genre">Thriller</label>
+			</section>
 
 			<!-- button to send the book to the server -->
 			<button>Add Book!</button>
