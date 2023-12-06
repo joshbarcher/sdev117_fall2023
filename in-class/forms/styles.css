@@ -6,3 +6,8 @@ label.form-label {
 section {
     margin: 6px;
 }
+
+span.error {
+    color: red;
+    display: none;
+}

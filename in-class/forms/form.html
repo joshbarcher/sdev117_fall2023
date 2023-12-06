@@ -9,42 +9,45 @@
 	<body>
 		<h1>Book Entry Form</h1>
 		<hr>
-		<form>
+		<form name="book-entry">
 			<!-- book title -->
 			<section>
 				<label for="book-title" class="form-label">Title</label>
-				<input type="text" id="book-title" required>
+				<input type="text" id="book-title" name="title" required>
+				<span id="title-error" class="error">Title must be between 0-30 characters</span>
 			</section>
 
 			<!-- author -->
 			<section>
 				<label for="book-author" class="form-label">Author</label>
-				<input type="text" id="book-author" required>
+				<input type="text" id="book-author" name="author" required>
+				<span id="author-error" class="error">Author must be between 0-30 characters</span>
 			</section>
 
 			<!-- pages -->
 			<section>
 				<label for="pages" class="form-label">Total pages</label>
-				<input type="number" id="pages" required>
+				<input type="number" id="pages" name="pages" required>
+				<span id="pages-error" class="error">Pages must be between 0-2500</span>
 			</section>
 
 			<!-- publish date -->
 			<section>
 				<label for="released-on" class="form-label">Released On</label>
-				<input type="date" id="released-on" required>
+				<input type="date" id="released-on" name="release-date" required>
 			</section>
 
 			<!-- isbn -->
 			<section>
 				<label for="isbn" class="form-label">ISBN</label>
-				<input type="text" id="isbn" placeholder="xxx-x-xx-xxxxxx-x"
+				<input type="text" id="isbn" placeholder="xxx-x-xx-xxxxxx-x" name="isbn"
 					   pattern="\d{3}-\d{1}-\d{2}-\d{6}-\d{1}" required>
 			</section>
 
 			<!-- rating -->
 			<section>
 				<label for="rating" class="form-label">5-Star Rating</label>
-				<select id="rating">
+				<select id="rating" name="rating">
 					<option value="1">1 star</option>
 					<option value="2">2 stars</option>
 					<option value="3">3 stars</option>
@@ -80,7 +83,7 @@
 			</section>
 
 			<!-- button to send the book to the server -->
-			<button>Add Book!</button>
+			<button type="submit">Add Book!</button>
 		</form>
 	</body>
 </html>
